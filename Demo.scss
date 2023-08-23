@@ -1,0 +1,25 @@
+$tsBlue: #3178C6;
+$sassyPink: #CD6799;
+
+@mixin myFont
+{
+  font-family: Beirut, sans-serif;
+}
+
+body
+{
+  background-color: $tsBlue;
+
+  color: white;
+
+  @include myFont;
+}
+
+.sassyClass
+{
+  background-color: $sassyPink;
+
+  color: black;
+
+  @include myFont;
+}
