@@ -10,5 +10,6 @@ function multiply(x, y) {
 function divide(x, y) {
     return x / y;
 }
-var myName = "Cedric";
-console.log("I love TypeScript!");
+for (var i = 1; i <= 10; i++) {
+    console.log("I love TypeScript!");
+}

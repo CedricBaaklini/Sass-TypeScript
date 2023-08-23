@@ -19,6 +19,7 @@ function divide(x, y)
     return x / y;
 }
 
-let myName = "Cedric";
-
-console.log(`I love TypeScript!`)
+for (var i = 1; i <= 10; i++)
+{
+    console.log("I love TypeScript!");
+}
