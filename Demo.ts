@@ -1,25 +1,30 @@
-
-function add(x, y)
+class Square
 {
-    return x + y;
+    length: number;
+    width: number;
+
+    constructor(length: number, width: number)
+    {
+        this.length = length;
+        this.width = width;
+    }
+    perimeter(): number
+    {
+        return (2 * this.length) + (2 * this.width);
+    }
+
+    area(): number
+    {
+        return this.length * this.width;
+    }
+
 }
 
-function subtract(x, y)
-{
-    return x - y;
-}
 
-function multiply(x, y)
-{
-    return x * y;
-}
 
-function divide(x, y)
-{
-    return x / y;
-}
+// for (var i = 1; i <= 10; i++)
+// {
+//     console.log("I love TypeScript!");
+// }
 
-for (var i = 1; i <= 10; i++)
-{
-    console.log("I love TypeScript!");
-}
+let carpet = new Square(4,4);
