@@ -4,22 +4,45 @@ $sassyPink: #CD6799;
 @mixin myFont
 {
   font-family: Beirut, sans-serif;
+  text-align: center;
 }
 
-body
+.split
 {
-  background-color: $tsBlue;
-
-  color: white;
-
   @include myFont;
-}
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
 
-.sassyClass
-{
-  background-color: $sassyPink;
+  &.left
+  {
+    left: 0;
+    background-color: $sassyPink;
+    color: black;
+  }
 
-  color: black;
+  &.right
+  {
+    right: 0;
+    background-color: $tsBlue;
+    color: white;
+  }
 
-  @include myFont;
+  &.centered
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img
+    {
+      width: 150px;
+      border-radius: 50%;
+    }
+  }
 }

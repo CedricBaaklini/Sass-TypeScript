@@ -18,6 +18,28 @@ class Square
         return this.length * this.width;
     }
 
+    isSquare(): Boolean
+    {
+        return this.length == this.width;
+    }
+
+
+}
+
+class Cube extends Square
+{
+    height: number;
+    constructor(length: number, width: number, height: number)
+    {
+        super(length,width);
+
+        this.height = height;
+    }
+
+    volume(): number
+    {
+        return this.length * this.width * this.height;
+    }
 }
 
 
@@ -27,4 +49,12 @@ class Square
 //     console.log("I love TypeScript!");
 // }
 
-let carpet = new Square(4,4);
+let tile = new Square(2,2);
+
+let box = new Cube(3,3,3);
+
+console.log(tile.perimeter());
+
+console.log(tile.area());
+
+console.log(box.volume())
