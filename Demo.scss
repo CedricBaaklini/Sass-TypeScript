@@ -1,14 +1,12 @@
 $tsBlue: #3178C6;
 $sassyPink: #CD6799;
 
-@mixin myFont
-{
+@mixin myFont {
   font-family: Beirut, sans-serif;
   text-align: center;
 }
 
-.split
-{
+.split {
   @include myFont;
   height: 100%;
   width: 50%;
@@ -18,29 +16,25 @@ $sassyPink: #CD6799;
   overflow-x: hidden;
   padding-top: 20px;
 
-  &.left
-  {
+  &.left {
     left: 0;
     background-color: $sassyPink;
     color: black;
   }
 
-  &.right
-  {
+  &.right {
     right: 0;
     background-color: $tsBlue;
     color: white;
   }
 
-  &.centered
-  {
+  &.centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    img
-    {
+    img {
       width: 150px;
       border-radius: 50%;
     }
